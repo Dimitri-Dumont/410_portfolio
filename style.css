@@ -1,14 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Lucida Console", "Courier New", monospace;
 }
-body{
+body {
   background-color: black;
   margin-bottom: 75px;
-
 }
-a{
+a {
   color: white;
 }
 p::first-line {
@@ -23,9 +22,10 @@ h1 {
 section {
   height: auto;
   text-align: center;
-
 }
-
+input {
+  display: table-cell;
+}
 
 /* classes */
 .container {
@@ -33,7 +33,6 @@ section {
   margin: auto;
   width: 50%;
   height: auto;
-
 }
 .profile {
   width: 50%;
@@ -43,7 +42,6 @@ section {
   background-color: yellowgreen;
   left: 30%;
   position: relative;
-
 }
 .history {
   background-color: lightcoral;
@@ -61,7 +59,8 @@ section {
   position: relative;
 }
 .work {
-text-align: center;}
+  text-align: center;
+}
 .github {
   color: purple;
 }
@@ -73,60 +72,15 @@ text-align: center;}
   top: 0px;
   right: 0px;
   font-size: 40px;
-  color : white;
+  color: white;
 }
 .bullets {
   display: list-item;
   color: white;
   text-align: left;
 }
-
-
-/* Animation */
-.arrow {
-  position: absolute;
-  left: 95%;
-  transform: translate(-50%, -50%);
-  bottom: 20%;
-}
-.arrow span {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-bottom: 5px solid #ffffff;
-  border-right: 5px solid #ffffff;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) translate(20px, 20px);
-  }
- 
-}
-
-.fadein {
-  opacity: 0;
-  
-}
-
-
-
 .form-element {
   font-weight: bold;
-}
-input {
-  display: table-cell;
 }
 
 .btn-sub {
@@ -158,4 +112,39 @@ input {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+/* Animation */
+.arrow {
+  position: absolute;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  bottom: 20%;
+}
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+.fadein {
+  opacity: 0;
 }
