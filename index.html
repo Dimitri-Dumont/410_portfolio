@@ -4,25 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01 - Hello</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../hw2/01-hello.css" />
+    <script defer src="js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  
+
   <body>
+    <div class="landing">
+      <ul class="navBar">
+        <li><a href="#About">About</a></li>
+        <li><a href="#history">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <img src="DSC09899.jpg" alt="profile" class="profile" />
+      <div class="arrow">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <main class="container">
-      <h1>Dimitri Dumont</h1>
-      <a href="https://ibb.co/KNgvbff"
-        ><img
-          src="https://i.ibb.co/KNgvbff/PXL-20210602-190715512-2.jpg"
-          alt="Profile picture"
-          border="0"
-      /></a>
-      <p>
-        TESST Hi, my name is Dimitri and I like long walks on the beach. <br />
-        When I'm not beach walking i'm hard at work solving world hunger and
-        saving kittens!
-      </p>
+      <section class="About fadein" id="About">
+        <h1>About</h1>
+        <p>
+          I am a computer science student and aspiring software engineer,
+          seeking an opportunity in the industry. I currently attend Portland
+          State University and will be graduating at the end of the year with a
+          BS in Computer Science. I’m extremely excited to start my career and
+          further fuel my passion for technology and science by working with a
+          leader in the field.
+        </p>
+        <p>
+          My university studies, complemented with my personal projects and two
+          six month software development internships has lent me a deep
+          understanding of advanced enterprise level programming in Java and C#.
+          My personal drive and curiosity has driven me to self teach myself a
+          growing list of languages such as Kotlin, Python and C/C++. My seven
+          years in leadership positions in the bar and music venue industry has
+          left me with the highest levels of work ethic, communication skills
+          and customer service. These are the attributes that I know will make
+          my contribution to a future company worthwhile.
+        </p>
+      </section>
+      <section class="history fadein" id="history">
+        <h1>Work History</h1>
+        <p class="work">Apex Clearing - Software engineer intern<br /></p>
+
+        <ul class="bullets">
+          <li>
+            Collaboration with a team of engineers on the maintenance,
+            development and deployment of back-end Java applications
+          </li>
+          <li>
+            Extensive use of Kubernetes: including staging and devlopment in a
+            Docker enviroment, as well as utiliazation of toolsets such as
+            SKaffold, Helm and Tilt.
+          </li>
+          <li>
+            From scratch development and deployment of internally facing API
+            currently in use by company.
+          </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <p>Viewpoint - DevOps engineer intern<br /></p>
+        <ul class="bullets">
+          <li>
+            Design and development of automated UI testing for enterprise level
+            project management software solutions
+          </li>
+          <li>
+            Extensive experience with cloud deployment and development utilizing
+            Microsoft Azure stack.
+          </li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="projects fadein" id="projects">
+        <h1>Solo Prjects</h1>
+
+        <p>
+          Android object detection api<br />
+          Currently working on deploying an android application built ontop of
+          open source computer vision projects from OpenCV and TensorFLow.
+        </p>
+        <img src="gif.gif" alt="ObjectDetection" class="projectGif" />
+        <br />
+        <a class="github" href="https://github.com/Dimitri-Dumont/410-vision"
+          >GitHub</a
+        >
+      </section>
+
+      <section class="Contact fadein" id="Contact">
+        <h1>Contact Me</h1>
+        <form class="form" action="submit">
+        
+          <label class="form-element" for="Uname">Name:</label>
+          <input type="text" id="Uname" name="fname" /><br /><br />
+          <label class="form-element" for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label class="form-element" for="email">Phone:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <button id="submit" class="btn-sub" type="button">Submit</button>
+          <button class="btn-res" type="button">Reset</button>
+        </form>
+      </section>
+      
     </main>
   </body>
 </html>
