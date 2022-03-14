@@ -10,6 +10,9 @@ body {
 a {
   color: white;
 }
+p{
+  font-size: 1.5vw;
+}
 p::first-line {
   color: purple;
   text-transform: uppercase;
@@ -35,7 +38,6 @@ input {
   height: auto;
   display: flex;
   flex-flow: column;
-
 }
 .profile {
   width: 50%;
@@ -80,11 +82,11 @@ input {
   display: list-item;
   color: white;
   text-align: left;
+  font-size: 1.5vw;
 }
 .form-element {
   font-weight: bold;
 }
-
 .btn-sub {
   background-color: #006400;
   padding: 7px 32px;
@@ -98,7 +100,6 @@ input {
   border-radius: 5px;
   color: #080808;
 }
-
 .btn-res {
   background-color: #ffffff;
   padding: 7px 32px;
@@ -115,9 +116,10 @@ input {
   bottom: 0;
   left: 0;
 }
-.landing{
+.landing {
   display: flex;
 }
+
 /* Animation */
 .arrow {
   position: absolute;
