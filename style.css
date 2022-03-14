@@ -16,7 +16,7 @@ p::first-line {
 }
 h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 4vw;
   text-align: center;
 }
 section {
@@ -33,6 +33,9 @@ input {
   margin: auto;
   width: 50%;
   height: auto;
+  display: flex;
+  flex-flow: column;
+
 }
 .profile {
   width: 50%;
@@ -40,22 +43,22 @@ input {
 }
 .About {
   background-color: yellowgreen;
-  left: 30%;
+  left: 20%;
   position: relative;
 }
 .history {
   background-color: lightcoral;
-  right: 30%;
+  right: 20%;
   position: relative;
 }
 .projects {
   background-color: lightblue;
-  left: 30%;
+  left: 20%;
   position: relative;
 }
 .Contact {
   background-color: lightsalmon;
-  right: 30%;
+  right: 20%;
   position: relative;
 }
 .work {
@@ -70,7 +73,7 @@ input {
   position: absolute;
   top: 0px;
   right: 0px;
-  font-size: 40px;
+  font-size: 4vw;
   color: white;
 }
 .bullets {
