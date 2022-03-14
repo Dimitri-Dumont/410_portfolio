@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+  img {
+    border-radius: 50%;
+  }
+  p::first-line {
+    color: purple;
+    text-transform: uppercase;
+  }
